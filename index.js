@@ -8,14 +8,30 @@ const PORT = 3000;
 app.use(cors());
 app.use(express.json());
 
-let passwordCards = [];
+let passwordCards = [
+    {
+        id: uuidv4(),
+        url: 'https://www.example.com',
+        name: 'Example Site',
+        username: 'username',
+        password: 'password'
+    },
+    {
+        id: uuidv4(),
+        url: 'https://www.nextexample.com',
+        name: 'Next Example Site',
+        username: 'username',
+        password: 'password'
+    }
+];
 
 app.get('/password-cards', (req, res) => {
     const { filter } = req.query;
 
     let cards = passwordCards;
     if (filter) {
-        cards = cards.filter(card => card.name.includes(filter));
+        cards = cards.filter(card =>
+            card.name.toLowerCase().includes(filter.toLocaleLowerCase()));
     }
     res.json(cards);
 });
