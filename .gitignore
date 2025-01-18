@@ -1,0 +1,41 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretório de dependências do Node
+node_modules/
+
+# Diretório de builds
+dist/
+build/
+
+# Diretórios temporários
+tmp/
+temp/
+.pnpm-debug.log*
+
+# Diretórios de testes
+coverage/
+.nyc_output/
+
+# Diretórios de ferramenta
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de configuração
+.env
+.env.test
+.env.production
+
+# Arquivos gerados por pacotes
+*.d.ts
+*.js.map
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
