@@ -12,12 +12,12 @@ Clique no link abaixo para ter acesso a documentação detalhada.
 * Buscar por id.
 * Atualização.
 * Exclusão.
+
 ## Tecnologias
 * WSL2
 * Ubuntu 20.04.3 LTS
 * Node v22.12.0
 * NPM/NPX 10.9.0
-
 
 ## Bibliotecas
 * Express 4.21.2
@@ -28,7 +28,7 @@ Clique no link abaixo para ter acesso a documentação detalhada.
     > Usado para configurar permissão de acesso de clientes externos sem SSL.
 
 ## IDE
-* Visual Studio Code
+* Visual Studio Code 1.96.3
 * Puglin Codeium: 
     > Ferramenta aceleradora de desenvolvimento, IA Generativa similar ao Copilot do Github.
 
