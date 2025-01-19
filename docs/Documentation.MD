@@ -8,15 +8,15 @@ A primeira coisa que foi definida foi a nossa estrutura, um ponto muito importan
 src/
 |
 ├── controllers/
-│   └── passwordCardController.js
+│   └── passwordCardController.ts
 ├── services/
-│   └── passwordCardService.js
+│   └── passwordCardService.ts
 ├── routes/
-│   └── passwordCardRoutes.js
+│   └── passwordCardRoutes.ts
 ├── models/
-│   └── passwordCardModel.js
-├── app.js
-└── server.js
+│   └── passwordCardModel.ts
+├── app.ts
+└── server.ts
 ```
 
 Todas as responsabilidades foram separadas em um novo diretório deixando assim o projeto estruturado e pronto para manutenções pontuais sem colocar em risco a estrutura como um todo.
