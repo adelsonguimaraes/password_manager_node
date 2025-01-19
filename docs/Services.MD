@@ -23,7 +23,7 @@ class PasswordCardService {
 ```
 ### Métodos
 
-* __[GET] getAllCards__
+* __getAllCards__
 
     Nosso método que pode listar ou listar com filtro `getAllCards`, cógido simples que que pode receber um filtro, faz um `filter` na listagem, tipa o valor de card como `PasswordCardModel`, acessa o `name` do card deixa em formato minúsculo com a função `toLowerCase`, usa a função `includes` que verifica se dentro da string de name contém a palavra informada, que no caso é o valor que vem em `filter` que também é convertido para minúsculo.
 
@@ -35,7 +35,7 @@ class PasswordCardService {
         );
     }
     ```
-* __[GET] getCardById__
+* __getCardById__
     
     Aqui temos o método para buscar um item pelo identificador, o método espera o identificador, busca na lista usando o método `find` e retorna o objeto encontrado.
 
@@ -46,7 +46,7 @@ class PasswordCardService {
     ```
 
 
-* __[POST] createCard__
+* __createCard__
 
     Nosso método de criação, recebe os dados necessários para salvar, cria uma nova instância de `PasswordCardModel` e adiciona a lista usando um método `push`.
 
@@ -58,7 +58,7 @@ class PasswordCardService {
     }
     ```
 
-* __[UPDATE] updateCard__
+* __updateCard__
 
     Método de atualização de dados, recebe os dados pra atualização, busca na lista de dados, verifica se existe, se existir atualiza as informações.
 
@@ -71,7 +71,7 @@ class PasswordCardService {
         return passwordCards[cardIndex];
     };
     ```
-* __[DELETE] delete__
+* __delete__
 
     O método de remover é o mais simples, espera apenas o identificador, busca na lista, se encontrar remove.
 
