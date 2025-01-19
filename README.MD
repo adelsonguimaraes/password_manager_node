@@ -2,7 +2,7 @@
 API para os sistema de gerenciamentos de senhas de aplicações.
 
 ## Documentação
-Clique no link abaixo para ter acesso a documentação detalha.
+Clique no link abaixo para ter acesso a documentação detalhada.
 
 [> Acesso a documentação <](docs/Documentation.MD)
 
