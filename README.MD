@@ -80,3 +80,10 @@ npm run dev
         ```
 * DELETE
     * > /password-cards/{id}
+
+## Reproduzir Testes
+Para reproduzir a cobertura de testes podemos rodar o comando abaixo.
+
+```sh
+npm test
+```

@@ -15,6 +15,9 @@ src/
 │   └── passwordCardRoutes.ts
 ├── models/
 │   └── passwordCardModel.ts
+├── tests/
+│   └── passwordCardModel.test.ts
+│   └── passwordCardService.test.ts
 ├── app.ts
 └── server.ts
 ```
@@ -31,3 +34,4 @@ Abaixo você pode acessar a documentação de cada item.
 * [Routes](Routes.MD)
 * [App](App.MD)
 * [Server](Server.MD)
+* [Tests](Tests.MD)

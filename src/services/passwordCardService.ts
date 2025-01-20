@@ -33,9 +33,11 @@ let passwordCards: PasswordCardModel[] = [
 
 class PasswordCardService {
     static getAllCards(filter: string = '') {
-        return passwordCards.filter((card: PasswordCardModel) =>
-            card.name.toLowerCase().includes(filter.toLowerCase())
-        );
+        return passwordCards
+            .filter((card: PasswordCardModel) =>
+                card.name.toLowerCase().includes(filter.toLowerCase())
+            )
+            .map((card: PasswordCardModel) => new PasswordCardModel(card.url, card.name, card.username, card.password));
     }
 
     static getCardById(id: string) {
@@ -57,6 +59,7 @@ class PasswordCardService {
     };
 
     static delete(id: string) {
+
         const cardIndex = passwordCards.findIndex(card => card.id === id);
         if (cardIndex == -1) return false;
 

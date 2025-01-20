@@ -29,6 +29,7 @@ export const createCard = async (req: Request, res: Response): Promise<void> => 
         const { url, name, username, password } = req.body;
         if (!url || !name || !username || !password) {
             res.status(400).json({ error: 'Missing required fields' });
+            return;
         }
         const newCard = PasswordCardService.createCard(url, name, username, password);
         res.status(201).json(newCard);
@@ -44,11 +45,13 @@ export const updateCard = async (req: Request, res: Response): Promise<void> => 
 
         if (!url || !name || !username || !password) {
             res.status(400).json({ error: 'Missing required fields' });
+            return;
         }
 
         const updatedCard = PasswordCardService.updateCard(id, url, name, username, password);
         if (!updatedCard) {
             res.status(404).json({ message: 'Card not found' });
+            return;
         }
 
         res.status(200).json(updateCard);
@@ -63,6 +66,7 @@ export const deleteCard = async (req: Request, res: Response): Promise<void> => 
         const isDeleted = PasswordCardService.delete(id);
         if (!isDeleted) {
             res.status(404).json({ message: 'Card not found' });
+            return;
         }
         res.status(204).send();
     } catch (error) {
